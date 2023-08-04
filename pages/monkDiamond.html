@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Monk Diamond</title>
+        <style>
+            body {
+                margin: 0px;
+            }
+            .pad {
+                padding: 25px;
+            }
+            .header {
+                background-color: lightblue;
+                color: green;
+                height: 8vh;
+                padding-top: 2.8vh; 
+                padding-bottom: 2vh; 
+                /* font-size: 40pt; */
+                font-size: 5vh;
+                text-align: center;
+            }
+            .welcome {
+                background-color: plum;
+                color: white;
+                font-size: 20pt;
+                text-align: center;
+                padding: 1vh 0;
+                height: 3vh;
+                margin: 0px;
+            }
+            .main-text {
+                display:inline-block;
+                width: 50vw;
+                float: left;
+                background-color: beige;
+            }
+            .divs {
+                display: block;
+                margin: 5px;
+                width: 100%;
+                float: right;
+                border: 4px solid lightblue;
+                background-color: white;
+                align-items: center;
+            }
+            .supermain{
+                background-color: beige;
+                width: 100vw;
+                float: left;
+            }
+            #teampic{
+                height: 30%;
+            }
+            .bigdiv{
+                float: right;
+                margin-right: 8vw;
+                display:inline-block;
+                display: flex;
+                flex-direction: column;
+                width: 30vw;
+            }
+            #monkDiamond{
+                position: relative;
+                left: 20%;
+                width: 60%;
+                height: 30%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="header pad">
+            The Monk Diamond Discovery
+        </div>
+        <div>
+            <p class="welcome">
+            Stolen Diamond Discovered in Siberia!
+            </p>
+        </div>
+        <div class="supermain">
+            <div class="main-text pad">
+                <p>
+                Professor Bairstone and Dr Day have made a sensational discovery.<br/>
+                They have discovered the Monk Diamond in a remote cave in Siberia.<br/>
+                Professor Bairstone\'s dog, Ernest, sniffed out the diamond.
+                </p>
+                <p>
+                The jewel was stolen three years ago from the House of Volkov.<br/>
+                The prime suspects in the theft were the Bond Brothers.<br/>
+                The team thinks the diamond had been hidden by the thieves.<br/>
+                They sent this photo from their camp:
+                </p>
+                <img src="src/team.jpg" />
+            </div>
+            <div class="bigdiv">
+                    <div class="divs pad">
+                        <img src="src/diamond.jpg" alt="Diamond" id="monkDiamond"/>
+                        <p style="text-align: center;">The Monk Diamond</p>
+                    </div>
+                    <div class="divs pad" style="text-align: center;">
+                        Fact File<br/>
+                        Carats: 300<br/>
+                        Colour: Green<br/>
+                        Value: Over  $10 million
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

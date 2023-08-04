@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+         
+</head>
+<body>
+    <style>
+        *{margin:0 ;padding: 0;}
+        body {font-size: 10px;}
+        .banner{position: relative;width: 100%;margin: 0 auto;}
+        .banner img{width: 100%;}
+        .heading {color:blue;position:absolute;top: 8%;width: 100%;text-align: center;font-size: 6.5rem; 
+            text-shadow: 5px 5px 10px #000000;}
+.heading2 {color:aqua; position:absolute;top :46.5%;left: 3.5%; font-size: 35px;
+     text-shadow: 5px 5px 10px #000000;}
+.heading3{color:black; position: absolute;top: 60%; left:3.5%; font-size: 35px; 
+
+}
+          </style>
+    
+   
+    
+    
+    
+   <div class="container">
+    <div class="row">
+        <div class="banner">
+            <img src= "y2k.jpg" alt="img">
+    <h1 class="heading">THE MONK DIAMOND DISCOVERY</h1>
+    </div>
+    </div>
+   </div>
+   <div class="heading2">
+    <p>Please enter the password to view this website</p>
+    <p>Password:<input id="passwordBox" type="password"/></p>
+   </div>
+    <div class="heading3">
+    <a  href="pages/monkDiamond.html" onclick="return   checkPassword ();">
+         
+        Click here to visit the Monk Diamond web page
+    </a>
+    </div>
+   
+    
+   
+    
+
+    <button onClick="checkPassword()"> check</button>
+    <script>function checkPassword()   {
+        var password=document.getElementById("passwordBox");
+        console.log (password);
+        var passwordTyped = password.value;
+        console.log (passwordTyped);
+        if ( passwordTyped=="Ernest300" ) { 
+            console.log("true")
+            return true;
+        }else {
+console.log("false")
+alert ("incorect password")
+             return false
+        }
+        
+    }
+        </script>   
+</body>
+</html>
